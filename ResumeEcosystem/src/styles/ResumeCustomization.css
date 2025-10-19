@@ -1,0 +1,264 @@
+.customization-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 70vh;
+}
+
+.customization-sidebar {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-right: 2px solid #e1e5e9;
+}
+
+.customization-main {
+  padding: 2rem;
+}
+
+.template-selector {
+  margin-bottom: 2rem;
+}
+
+.template-selector h3 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.template-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.template-card {
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.template-card:hover {
+  border-color: #667eea;
+}
+
+.template-card.selected {
+  border-color: #667eea;
+  background-color: #f0f4ff;
+}
+
+.template-preview {
+  height: 120px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+.template-preview.modern {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.template-preview.classic {
+  background: #2c3e50;
+}
+
+.template-preview.creative {
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+}
+
+.template-preview.minimal {
+  background: white;
+  border: 2px solid #333;
+}
+
+.preview-header {
+  height: 20px;
+  background: rgba(255,255,255,0.2);
+  margin-bottom: 0.5rem;
+  border-radius: 2px;
+}
+
+.preview-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.preview-line {
+  background: rgba(255,255,255,0.3);
+  height: 8px;
+  border-radius: 2px;
+}
+
+.preview-line.short {
+  width: 60%;
+}
+
+.preview-line.medium {
+  width: 80%;
+}
+
+.preview-line.long {
+  width: 100%;
+}
+
+.template-info h4 {
+  margin-bottom: 0.25rem;
+  color: #2c3e50;
+}
+
+.template-info p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.section-list {
+  margin-bottom: 2rem;
+}
+
+.section-list h3 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.section-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s;
+  border-left: 4px solid transparent;
+}
+
+.section-button:hover {
+  background: #e3f2fd;
+  border-left-color: #2196f3;
+}
+
+.section-button.active {
+  background: #667eea;
+  color: white;
+  border-left-color: #5a6fd8;
+}
+
+.integration-status {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.integration-status h4 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.platform-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.platform-item:last-child {
+  border-bottom: none;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+}
+
+.status-dot.disconnected {
+  background-color: #ff4757;
+}
+
+.section-editor {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.section-editor h3 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.list-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.list-item-editor {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #e1e5e9;
+  position: relative;
+}
+
+.list-item-editor input,
+.list-item-editor textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.ai-suggestions {
+  background: #e8f5e8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #4CAF50;
+}
+
+.ai-suggestions h4 {
+  margin-bottom: 1rem;
+  color: #2e7d32;
+}
+
+.suggestion-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-suggestion {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-suggestion:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 968px) {
+  .customization-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .customization-sidebar {
+    border-right: none;
+    border-bottom: 2px solid #e1e5e9;
+  }
+}

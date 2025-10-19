@@ -1,0 +1,207 @@
+.resume-preview-container {
+  padding: 2rem;
+}
+
+.preview-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e1e5e9;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.resume-template {
+  max-width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  font-family: 'Georgia', serif;
+  line-height: 1.4;
+}
+
+/* Modern Template */
+.resume-template.modern {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resume-template.modern .resume-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #667eea;
+}
+
+.resume-template.modern .name {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.resume-template.modern .title {
+  font-size: 1.3rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.resume-template.modern .contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: #666;
+}
+
+.resume-section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  color: #2c3e50;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.experience-item,
+.education-item,
+.project-item {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.experience-header,
+.education-header,
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.company,
+.institution,
+.project-name {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.position,
+.degree {
+  font-weight: 500;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  color: #666;
+  font-style: italic;
+}
+
+.description {
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.technologies,
+.project-technologies {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.skills-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.skill-category {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.skill-category strong {
+  min-width: 120px;
+  color: #2c3e50;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  border: 1px solid #bbdefb;
+}
+
+.summary-text {
+  color: #555;
+  line-height: 1.6;
+}
+
+.certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.certification-item {
+  color: #555;
+}
+
+/* Print Styles */
+@media print {
+  .resume-preview-container {
+    padding: 0;
+  }
+  
+  .preview-controls {
+    display: none;
+  }
+  
+  .resume-template {
+    box-shadow: none;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-preview-container {
+    padding: 1rem;
+  }
+  
+  .preview-controls {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .resume-template.modern .contact-info {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .experience-header,
+  .education-header,
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
